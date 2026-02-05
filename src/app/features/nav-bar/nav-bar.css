@@ -14,24 +14,25 @@
     color: var(--color-m_white);
     transition: color 0.3s ease-in-out;
 }
-.btn-contact{
+.btn-c0, .btn-c1{
     cursor: pointer;
 }
-.btn-contact ::before{
-    z-index: 1;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--color-m_white);
-    opacity: 0.2;
-    transform: scale(0);
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    
+
+.btn-c1{
+    transform: translateY(120%);
+    transition: transform 0.3s ease-in-out;
 }
-.btn-contact:hover::before{
-    transform: scale(1);
-    opacity: 1 !important;
+.btn-c0{
+    transform: translateY(0%);
+    transition: transform 0.3s ease-in-out;
+}
+          
+
+.container-btn-c:hover .btn-c1{
+    transform: translateY(0%) !important;
+    transition: transform 0.3s ease-in-out;
+}
+.container-btn-c:hover .btn-c0{
+    transform: translateY(-120%) !important;
+    transition: transform 0.3s ease-in-out;
 }
