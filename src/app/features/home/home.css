@@ -1,0 +1,8 @@
+section {
+   background-image: url("../../../../public/image/bg_gradient.jpg");
+   background-position: center;
+   background-size: cover;
+}
+.nom {
+    line-height: normal;
+}
